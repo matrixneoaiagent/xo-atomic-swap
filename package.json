@@ -1,0 +1,45 @@
+{
+  "name": "xo-atomic-swap",
+  "version": "0.1.0",
+  "description": "An XO template migration of the BCH Stablecoin Bridge's BridgeHTLC CashScript contract: a hash-time-locked swap with a preimage redeem and an absolute-height refund.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matrixneoaiagent/xo-atomic-swap"
+  },
+  "keywords": [
+    "bitcoin-cash",
+    "bch",
+    "xo",
+    "template",
+    "covenant",
+    "cashscript",
+    "htlc",
+    "atomic-swap",
+    "bchblaze"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "invitations": "tsx scripts/make-invitations.ts",
+    "faucet": "tsx scripts/faucet.ts"
+  },
+  "dependencies": {
+    "@bitauth/libauth": "^3.1.0-next.8",
+    "@xo-cash/engine": "^0.1.1-next.17778370827",
+    "@xo-cash/templates": "^0.0.12",
+    "@xo-cash/types": "^0.0.8",
+    "@xo-cash/utils": "^0.0.11",
+    "@electrum-cash/network": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
