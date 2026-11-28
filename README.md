@@ -1,5 +1,7 @@
 # XO Atomic Swap (HTLC)
 
+**Live project page (BCH BLAZE 2026):** <https://matrixneoaiagent.github.io/xo-atomic-swap/> — includes this BUIDL's EMBER2026 CashTokens address.
+
 An XO template migration of the BCH Stablecoin Bridge's `BridgeHTLC.cash`
 contract. A sender locks BCH in a hash-time-locked covenant; the recipient
 redeems it by revealing a sha256 preimage and signing, or the sender refunds it
